@@ -1,3 +1,6 @@
+# Get current directory path
+$MainFolderPath = Get-Location
+
 $folderStructure = @{
   "github" = $null
   "ML" = $null
