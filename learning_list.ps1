@@ -1,4 +1,3 @@
-$MainFolderPath = "C:\Users\didID\OneDrive\desktop\test"
 $folderStructure = @{
   "github" = $null
   "ML" = $null
