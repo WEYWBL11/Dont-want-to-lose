@@ -1,5 +1,5 @@
-# Define main folder path
-$MainFolderPath = "C:\Users\didID\OneDrive\desktop\test"
+# Get current directory path
+$MainFolderPath = Get-Location
 
 # Create folders with subfolders (FreshFromTwitch, HumanReview, LaunchingPad)
 $folderNames = "FreshFromTwitch", "HumanReview", "LaunchingPad"
@@ -13,8 +13,8 @@ foreach ($folder in $folderNames) {
     New-Item -ItemType Directory -Name $subfolder -Path "$MainFolderPath\$folder"
   }
   
-  # Create subfolders within Short folder (YouTubeShort, TikTokShort, InstagramShort)
-  $shortSubfolderNames = "YouTubeShort", "TikTokShort", "InstagramShort"
+  # Create subfolders within Short folder (YouTubeShort, TikTokShort, InstagramShort, FacebookShort, XShorts)
+  $shortSubfolderNames = "YouTubeShort", "TikTokShort", "InstagramShort", "FacebookShort", "XShorts"
   foreach ($shortSubfolder in $shortSubfolderNames) {
     New-Item -ItemType Directory -Name $shortSubfolder -Path "$MainFolderPath\$folder\Short"
   }
